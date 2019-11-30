@@ -1,32 +1,18 @@
 {
-  "_from": "cordova-plugin-paypal-here",
-  "_id": "cordova-plugin-paypal-here@0.0.11",
-  "_inBundle": false,
-  "_integrity": "sha512-2C1rNR95hrV6Cb5/I2yNhjR/QNSgBAC6J/F8wCLdIjB1nXTgM7zb6vxiSvegQt9BauGLy0WT+M9UacSjw29tfg==",
-  "_location": "/cordova-plugin-paypal-here",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "cordova-plugin-paypal-here",
-    "name": "cordova-plugin-paypal-here",
-    "escapedName": "cordova-plugin-paypal-here",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "cordova-plugin-paypal-here",
+  "description": "Cordova plugin for PayPal Here",
+  "author": "StorePilot AS",
+  "license": "MIT",
+  "module": "./www/CDVPayPalHere.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/storepilot/cordova-plugin-paypal-here",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storepilot/cordova-plugin-paypal-here.git"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-paypal-here/-/cordova-plugin-paypal-here-0.0.11.tgz",
-  "_shasum": "2b5bf064a197ed67ee4ff0acf7c5dae8c8c9186e",
-  "_spec": "cordova-plugin-paypal-here",
-  "_where": "/Users/steffanhalvorsen/Documents/npm/paypal-here",
-  "author": {
-    "name": "Josh Dronsfield"
+  "bugs": {
+    "url": "https://github.com/storepilot/cordova-plugin-paypal-here.git/issues"
   },
-  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-paypal-here",
     "platforms": [
@@ -34,16 +20,14 @@
       "android"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova plugin for PayPal Here",
   "keywords": [
     "ecosystem:cordova",
-    "cordova-ios",
-    "cordova-android"
+    "cordova",
+    "phonegap",
+    "paypal-here"
   ],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "cordova-plugin-paypal-here",
-  "scripts": {},
-  "version": "0.0.11"
+  "engines": {
+    "cordova": ">=6.0.0"
+  },
+  "scripts": {}
 }
