@@ -4,7 +4,7 @@
   "author": "StorePilot AS",
   "license": "MIT",
   "module": "./www/CDVPayPalHere.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/storepilot/cordova-plugin-paypal-here",
   "repository": {
     "type": "git",
@@ -29,5 +29,10 @@
   "engines": {
     "cordova": ">=6.0.0"
   },
-  "scripts": {}
+  "scripts": {},
+  "bundleDependencies": false,
+  "devDependencies": {
+      "cordova-paramedic": "git+https://github.com/apache/cordova-paramedic.git",
+      "eslint": "^3.18.0"
+  }
 }
