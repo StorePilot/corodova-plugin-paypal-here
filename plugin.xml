@@ -21,8 +21,8 @@
         </config-file>
         <source-file src="src/ios/CDVPayPalHere-Bridging-Header.h" />
         <source-file src="src/ios/CDVPayPalHere.swift" />
-        <framework src="PayPalHereSDKv2" type="podspec" spec="2.1.0201801" />
+        <framework src="PayPalHereSDKv2" type="podspec" spec="2.1.0319315000" />
         <hook type="before_plugin_install" src="scripts/before_plugin_install.sh" />
     </platform>
-    <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
+    <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
 </plugin>
