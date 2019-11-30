@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-paypal-here" version="0.0.9">
+    <name>CDVPayPalHere</name>
+    <description>Cordova PayPal Here Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,paypal,paypal here</keywords>
+    <js-module src="www/CDVPayPalHere.js" name="CDVPayPalHere">
+        <clobbers target="cordova.plugins.CDVPayPalHere" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVPayPalHere">
+                <param name="ios-package" value="CDVPayPalHere" />
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>com.paypal.here.reader</string>
+            </array>
+        </config-file>
+        <source-file src="src/ios/CDVPayPalHere-Bridging-Header.h" />
+        <source-file src="src/ios/CDVPayPalHere.swift" />
+        <framework src="PayPalHereSDKv2" type="podspec" spec="2.1.0201801" />
+        <hook type="before_plugin_install" src="scripts/before_plugin_install.sh" />
+    </platform>
+    <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
+</plugin>
